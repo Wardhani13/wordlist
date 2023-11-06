@@ -28,10 +28,6 @@ db = client[DB_NAME]
 
 app = Flask (__name__)
 
-password = 'sparta'
-cxn_str = f'mongodb://wardhani1:{password}@ac-6ez4vhl-shard-00-00.uxvodvx.mongodb.net:27017,ac-6ez4vhl-shard-00-01.uxvodvx.mongodb.net:27017,ac-6ez4vhl-shard-00-02.uxvodvx.mongodb.net:27017/?ssl=true&replicaSet=atlas-fr57e5-shard-0&authSource=admin&retryWrites=true&w=majority'
-client = MongoClient(cxn_str)
-
 db = client.dbsparta_plus_week2
 
 @app.route('/')

@@ -16,7 +16,7 @@ import requests
 from datetime import datetime
 from bson import ObjectId
 
-dotenv_path = join(dirname(_file_), '.env')
+dotenv_path = join(dirname(__file__), '.env')
 load_dotenv(dotenv_path)
 
 MONGODB_URI = os.environ.get("MONGODB_URI")

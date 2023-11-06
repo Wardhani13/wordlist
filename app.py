@@ -45,7 +45,7 @@ def main():
     return render_template(
         'index.html',
         words=words,
-        msg=msg
+        msg=msg,
     )
 
 @app.route('/detail/<keyword>')
